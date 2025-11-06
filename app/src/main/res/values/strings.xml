@@ -31,4 +31,14 @@
     <string name="janda">Janda</string>
     <string name="lajang">Lajang</string>
     <string name="duda">Duda</string>
+
+    <!-- Status -->
+    <string name="data_berhasil_disimpan">Data Berhasil Disimpan</string>
+    <string name="ok">OK</string>
+
+    <!-- Card Labels -->
+    <string name="label_nama">Nama:</string>
+    <string name="label_gender">Jenis Kelamin:</string>
+    <string name="label_status">Status:</string>
+    <string name="label_alamat_display">Alamat:</string>
 </resources>
