@@ -8,4 +8,18 @@
     <string name="tahun">2025</string>
     <string name="nama_mahasiswa">Kamilia Nurmala Hayati</string>
     <string name="nim">20230140108</string>
+
+    <!-- List Screen -->
+    <string name="list_daftar_peserta">List Daftar Peserta</string>
+    <string name="beranda">Beranda</string>
+
+    <!-- Form Screen -->
+    <string name="formulir_pendaftaran">Formulir Pendaftaran</string>
+    <string name="submit">Submit</string>
+    <string name="nama_lengkap">NAMA LENGKAP</string>
+    <string name="jenis_kelamin">JENIS KELAMIN</string>
+    <string name="status_perkawinan">STATUS PERKAWINAN</string>
+    <string name="alamat">ALAMAT</string>
+    <string name="isian_nama">Isian nama lengkap</string>
+    <string name="placeholder_alamat">Alamat</string>
 </resources>
