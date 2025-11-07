@@ -15,7 +15,7 @@ fun SplashScreen(
         horizontalAlignment = Alignment.CenterHorizontally
     ){
         Text(
-            text = "Selamat Datang",
+            text = stringResource(R.string.selamat_datang),
             fontSize = 32.sp,
             fontWeight = FontWeight.Bold,
             color = Color(0xFF6A1B9A)
@@ -24,20 +24,20 @@ fun SplashScreen(
         Spacer(modifier = Modifier.height(40.dp))
 
         Text(
-            text = "CARD-IST",
+            text = stringResource(R.string.card_ist),
             fontSize = 36.sp,
             fontWeight = FontWeight.Bold,
             color = Color(0xFF6A1B9A)
         )
 
         Text(
-            text = "MOBILE APP",
+            text = stringResource(R.string.mobile_app),
             fontSize = 14.sp,
             color = Color(0xFF6A1B9A)
         )
 
         Text(
-            text = "2025",
+            text = stringResource(R.string.tahun),
             fontSize = 16.sp,
             fontWeight = FontWeight.Bold,
             color = Color(0xFF6A1B9A)
