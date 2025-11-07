@@ -10,4 +10,12 @@
     <!-- Button -->
     <dimen name="button_height">50dp</dimen>
     <dimen name="button_corner">25dp</dimen>
+
+    <!-- Text Field -->
+    <dimen name="text_field_corner">8dp</dimen>
+
+    <!-- Card -->
+    <dimen name="card_corner">12dp</dimen>
+    <dimen name="card_corner_dialog">16dp</dimen>
+
 </resources>
