@@ -18,4 +18,13 @@
     <dimen name="card_corner">12dp</dimen>
     <dimen name="card_corner_dialog">16dp</dimen>
 
+    <!-- Spacing -->
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_medium">12dp</dimen>
+    <dimen name="spacing_large">30dp</dimen>
+    <dimen name="spacing_xlarge">40dp</dimen>
+    <dimen name="spacing_xxlarge">60dp</dimen>
+
+    <!-- Divider -->
+    <dimen name="divider_tipis">1dp</dimen>
 </resources>
