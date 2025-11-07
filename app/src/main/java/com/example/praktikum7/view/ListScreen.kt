@@ -45,5 +45,29 @@ fun ListScreen(
 
         Spacer(modifier = Modifier.height(dimensionResource(R.dimen.padding_top)))
 
+        Card(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = dimensionResource(R.dimen.padding_medium)),
+            colors = CardDefaults.cardColors(
+                containerColor = Color.White
+            ),
+            shape = RoundedCornerShape(dimensionResource(R.dimen.card_corner))
+        ) {
+            Column(
+                modifier = Modifier.padding(dimensionResource(R.dimen.padding_card))
+            ) {
+                DataField(label = stringResource(R.string.nama_lengkap), value = "Aprilia Kurnianti")
+                Spacer(modifier = Modifier.height(dimensionResource(R.dimen.spacing_small)))
+                DataField(label = stringResource(R.string.jenis_kelamin), value = "Perempuan")
+                Spacer(modifier = Modifier.height(dimensionResource(R.dimen.spacing_small)))
+                DataField(label = stringResource(R.string.status_perkawinan), value = "Lajang")
+                Spacer(modifier = Modifier.height(dimensionResource(R.dimen.spacing_small)))
+                DataField(label = stringResource(R.string.alamat), value = "Sleman")
+            }
+        }
+
+        Spacer(modifier = Modifier.height(dimensionResource(R.dimen.padding_top)))
+
     }
 }
