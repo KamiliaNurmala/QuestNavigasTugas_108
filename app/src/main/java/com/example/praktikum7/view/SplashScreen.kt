@@ -56,5 +56,26 @@ fun SplashScreen(
             fontSize = 14.sp,
             color = Color(0xFF6A1B9A)
         )
+
+        Spacer(modifier = Modifier.height(dimensionResource(R.dimen.spacing_xlarge)))
+
+        Button(
+            onClick = onNextButton,
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = dimensionResource(R.dimen.padding_large))
+                .height(dimensionResource(R.dimen.button_height)),
+            shape = RoundedCornerShape(dimensionResource(R.dimen.button_corner)),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = Color(0xFF9C27B0)
+            )
+        ) {
+            Text(
+                text = stringResource(R.string.submit),
+                fontSize = 16.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.White
+            )
+        }
     }
 }
