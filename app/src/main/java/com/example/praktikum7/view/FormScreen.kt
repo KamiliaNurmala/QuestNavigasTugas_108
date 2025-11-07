@@ -183,5 +183,62 @@ fun FormScreen(
         )
 
         Spacer(modifier = Modifier.height(dimensionResource(R.dimen.spacing_large)))
+
+
+        // Submit Button
+        Button(
+            onClick = { showDialog = true },
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = dimensionResource(R.dimen.padding_large))
+                .height(dimensionResource(R.dimen.button_height)),
+            shape = RoundedCornerShape(dimensionResource(R.dimen.button_corner)),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = Color(0xFF9C27B0)
+            )
+        ) {
+            Text(
+                text = stringResource(R.string.submit),
+                fontSize = 16.sp,
+                fontWeight = FontWeight.Bold
+            )
+        }
+    }
+
+    // Popup
+    if (showDialog) {
+        Dialog(onDismissRequest = { showDialog = false }) {
+            Card(
+                shape = RoundedCornerShape(dimensionResource(R.dimen.card_corner_dialog)),
+                colors = CardDefaults.cardColors(
+                    containerColor = Color.White
+                )
+            ) {
+                Column(
+                    modifier = Modifier.padding(dimensionResource(R.dimen.padding_medium))
+                ) {
+                    Text(
+                        text = stringResource(R.string.data_berhasil_disimpan),
+                        fontSize = 18.sp,
+                        fontWeight = FontWeight.Bold
+                    )
+                    Spacer(modifier = Modifier.height(dimensionResource(R.dimen.padding_card)))
+                    Text("${stringResource(R.string.label_nama)} $textNama")
+                    Text("${stringResource(R.string.label_gender)} $textJK")
+                    Text("${stringResource(R.string.label_status)} $textStatus")
+                    Text("${stringResource(R.string.label_alamat_display)} $textAlamat")
+                    Spacer(modifier = Modifier.height(dimensionResource(R.dimen.padding_card)))
+                    Button(
+                        onClick = {
+                            showDialog = false
+                            onBackButton()
+                        },
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        Text(stringResource(R.string.ok))
+                    }
+                }
+            }
+        }
     }
 }
