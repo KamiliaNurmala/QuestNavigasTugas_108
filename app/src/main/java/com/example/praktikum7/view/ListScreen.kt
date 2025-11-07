@@ -57,11 +57,11 @@ fun ListScreen(
             Column(
                 modifier = Modifier.padding(dimensionResource(R.dimen.padding_card))
             ) {
-                DataField(label = stringResource(R.string.nama_lengkap), value = "Aprilia Kurnianti")
+                DataField(label = stringResource(R.string.nama_lengkap), value = stringResource(R.string.nama_mahasiswa))
                 Spacer(modifier = Modifier.height(dimensionResource(R.dimen.spacing_small)))
-                DataField(label = stringResource(R.string.jenis_kelamin), value = "Perempuan")
+                DataField(label = stringResource(R.string.jenis_kelamin), value = stringResource(R.string.perempuan))
                 Spacer(modifier = Modifier.height(dimensionResource(R.dimen.spacing_small)))
-                DataField(label = stringResource(R.string.status_perkawinan), value = "Lajang")
+                DataField(label = stringResource(R.string.status_perkawinan), value = stringResource(R.string.lajang))
                 Spacer(modifier = Modifier.height(dimensionResource(R.dimen.spacing_small)))
                 DataField(label = stringResource(R.string.alamat), value = "Sleman")
             }
