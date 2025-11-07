@@ -10,11 +10,7 @@ import com.example.praktikum7.view.SplashScreen
 import com.example.praktikum7.view.ListScreen
 import com.example.praktikum7.view.FormScreen
 
-enum class Navigation
-    Splash,
-    List,
-    Form
-}
+enum class NavigationRoute { Splash, List, Form }
 
 @Composable
 fun AppNavigation(
@@ -23,9 +19,20 @@ fun AppNavigation(
 ) {
     NavHost(
         navController = navController,
-        startDestination = Navigation.Splash.name,
+        startDestination = NavigationRoute.Splash.name,
         modifier = modifier
     ) {
+        composable(route = NavigationRoute.Splash.name) {
+            SplashScreen(onNextButton = { navController.navigate(NavigationRoute.List.name) })
+        }
+        composable(route = NavigationRoute.List.name) {
+            ListScreen(
+                onBackButton = { navController.popBackStack() },
+                onNextButton = { navController.navigate(NavigationRoute.Form.name) }
+            )
+        }
+        composable(route = NavigationRoute.Form.name) {
+            FormScreen(onBackButton = { navController.popBackStack() })
+        }
     }
-
 }
