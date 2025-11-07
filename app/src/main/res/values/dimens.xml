@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Padding -->
+    <dimen name="padding_small">10dp</dimen>
+    <dimen name="padding_medium">20dp</dimen>
+    <dimen name="padding_large">40dp</dimen>
+    <dimen name="padding_top">20dp</dimen>
+    <dimen name="padding_card">16dp</dimen>
+
+    <!-- Button -->
+    <dimen name="button_height">50dp</dimen>
+    <dimen name="button_corner">25dp</dimen>
+</resources>
