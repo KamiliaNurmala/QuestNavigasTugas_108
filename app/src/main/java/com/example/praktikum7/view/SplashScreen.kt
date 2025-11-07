@@ -41,7 +41,7 @@ fun SplashScreen(
         Spacer(modifier = Modifier.height(dimensionResource(R.dimen.spacing_large)))
 
         Image(
-            painter = painterResource(id = R.drawable.logo_cardist),
+            painter = painterResource(id = R.drawable.download),
             contentDescription = null,
             modifier = Modifier.size(150.dp)
         )
