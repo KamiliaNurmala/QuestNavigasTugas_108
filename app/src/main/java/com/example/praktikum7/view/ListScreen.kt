@@ -69,5 +69,64 @@ fun ListScreen(
 
         Spacer(modifier = Modifier.height(dimensionResource(R.dimen.padding_top)))
 
+// Button Beranda
+        Button(
+            onClick = onBackButton,
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = dimensionResource(R.dimen.padding_large))
+                .height(dimensionResource(R.dimen.button_height)),
+            shape = RoundedCornerShape(dimensionResource(R.dimen.button_corner)),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = Color(0xFFD8A7E8)
+            )
+        ) {
+            Text(
+                text = stringResource(R.string.beranda),
+                fontSize = 16.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.White
+            )
+        }
+
+        Spacer(modifier = Modifier.height(dimensionResource(R.dimen.spacing_medium)))
+
+        // Button Formulir Pendaftaran
+        Button(
+            onClick = onNextButton,
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = dimensionResource(R.dimen.padding_large))
+                .height(dimensionResource(R.dimen.button_height)),
+            shape = RoundedCornerShape(dimensionResource(R.dimen.button_corner)),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = Color(0xFFD8A7E8)
+            )
+        ) {
+            Text(
+                text = stringResource(R.string.formulir_pendaftaran),
+                fontSize = 16.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.White
+            )
+        }
+    }
+}
+
+@Composable
+fun DataField(label: String, value: String) {
+    Column {
+        Text(
+            text = label,
+            fontSize = 12.sp,
+            color = Color.Gray,
+            fontWeight = FontWeight.Bold
+        )
+        Text(
+            text = value,
+            fontSize = 16.sp,
+            color = Color.Black,
+            fontWeight = FontWeight.Normal
+        )
     }
 }
