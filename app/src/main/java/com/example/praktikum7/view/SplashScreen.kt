@@ -1,6 +1,23 @@
 package com.example.praktikum7.view
 
-import android.window.SplashScreen
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.dimensionResource
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import com.example.praktikum7.R
 
 @Composable
 fun SplashScreen(
@@ -21,7 +38,16 @@ fun SplashScreen(
             color = Color(0xFF6A1B9A)
         )
 
-        Spacer(modifier = Modifier.height(40.dp))
+        Spacer(modifier = Modifier.height(dimensionResource(R.dimen.spacing_large)))
+
+        Image(
+            painter = painterResource(id = R.drawable.logo_cardist),
+            contentDescription = null,
+            modifier = Modifier.size(150.dp)
+        )
+
+        Spacer(modifier = Modifier.height(dimensionResource(R.dimen.padding_medium)))
+
 
         Text(
             text = stringResource(R.string.card_ist),
