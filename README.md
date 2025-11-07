@@ -7,5 +7,5 @@ Page 2
 Page 3 (sebelum submit)
 <img width="1280" height="2856" alt="Screenshot_20251107_193858" src="https://github.com/user-attachments/assets/1384b369-51d9-4a59-9d0e-3cfb3ba950cb" />
 
-Page 4 (sesudah submit)
+Page 3 (sesudah submit)
 <img width="1280" height="2856" alt="Screenshot_20251107_193924" src="https://github.com/user-attachments/assets/0e3e6a66-96ce-4284-ac73-d32d55d2f2c6" />
