@@ -42,5 +42,19 @@ fun SplashScreen(
             fontWeight = FontWeight.Bold,
             color = Color(0xFF6A1B9A)
         )
+
+        Spacer(modifier = Modifier.height(dimensionResource(R.dimen.spacing_xxlarge)))
+
+        Text(
+            text = stringResource(R.string.nama_mahasiswa),
+            fontSize = 16.sp,
+            color = Color(0xFF6A1B9A)
+        )
+
+        Text(
+            text = stringResource(R.string.nim),
+            fontSize = 14.sp,
+            color = Color(0xFF6A1B9A)
+        )
     }
 }
